@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body {
+        width: 100%;
+        text-align: center;
+    }
+
+    #container {
+        display: grid;
+        height: 1000px;
+        width: 1000px;
+        margin: auto;
+        border: black solid 1px;
+        grid-template-rows: 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px;
+        grid-template-columns: 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px;
+    }
+
+    button {
+        margin-bottom: 10px;
+    }
+
+
+
+</style>
+
+<body>
+    <button id="buttonGo" onclick="AddManyElements()">Go!</button>
+    <div id="container"></div>
+</body>
+
+<script>
+    function AddManyElements()
+    {
+        setInterval(addRandomElement, 1);
+    }
+
+    function addRandomElement () {
+
+        var element = document.createElement("div");
+        var container = document.getElementById('container');
+        var randomColor = Math.floor(Math.random()*16777215).toString(16);
+        var randomRow = Math.floor(Math.random() * 101);
+        var randomColumn = Math.floor(Math.random() * 101);
+        element.style.backgroundColor = "#" + randomColor;
+        element.style.gridRow = randomRow;
+        element.style.gridColumn = randomColumn;
+        element.style.backgroundColor = "#" + randomColor;
+        element.style.height = "100%";
+        element.style.width = "100%";
+        container.appendChild(element);
+    }
+</script>
+</html>
