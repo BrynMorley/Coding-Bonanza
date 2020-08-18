@@ -45,6 +45,10 @@ This project was completed within our web-week of teaching at Sparta Global. The
 
 ## Harry
 
+- [Typing Game](https://harryderbyshire.github.io/Mirage/) | JavaScipt, HTML, CSS | Typing game with timer and word 'filter'
+- [Colour Mixer](https://github.com/BrynMorley/Coding-Bonanza/tree/master/HarryWork/Colour%20Picker) | JavaScipt, HTML, CSS | Using canvas to overlay two colours and get the resulting colour
+- [Game Website](https://github.com/BrynMorley/Coding-Bonanza/tree/master/HarryWork/Game%20Website) | JavaScipt, HTML, CSS | Simple website containing multiple testing grounds for HTML, CSS and JavaScript
+
 ## Leo
 
 
