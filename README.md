@@ -2,11 +2,11 @@
 
 ## Bruno's Projects
 
-
 ## Alex
 
 ## Bryn
-
+- Bryn's Profiles => Website that uses the Steam, Riot and Blizzard APIs to fetch profile summaries for their games.
+- [Modnar's Dungeon]("https://github.com/BrynMorley/WPF-EF_Project_-Modnar") => A simple WPF game that lets you fight monsters randomly chosen from a database with custom characters
 ## Chen
 
 ## Chris
