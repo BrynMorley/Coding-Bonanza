@@ -9,6 +9,7 @@ This website aims to portray previous projects that I have completed in order to
 ### Technologies used
 - The website primarily incorporates HTML and CSS in order to display the contents and styling in the best light possible.
 - JavaScript was also used in order to improve the functionality of the navigation bar. The navigation bar transforms into an X once it is closed by an EventListener created in Js.
+- [Website Portfolio](https://github.com/alexm710/web-portfolio)
 
 ## Alex's Web-Week Project
 This project was completed within our web-week of teaching at Sparta Global. The website demonstrates different functionality and styling that was learned throughout the course of the teaching. 
@@ -16,6 +17,8 @@ This project was completed within our web-week of teaching at Sparta Global. The
 ## Technologies Used
 - HTML and CSS were used in order to demonstrate an understanding of different styling and functionality aspects. For example, flexbox's were included with different hover and transform effects. CSS Grid's were also used which combined with box shadows, rounding and transitions etc.
 -  JavaScript was used to retrieve data from a football premier league API, with headers and keys included. 
+
+- [Website in Web-Week](https://github.com/BrynMorley/Coding-Bonanza/tree/alex/Alex%20Files/HTML)
 
 # Bruno's Projects
 
