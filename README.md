@@ -1,7 +1,5 @@
 # Coding-Bonanza
 
-## Alex
-
 ## Alex's Website Portfolio
 
 ### Project Goal 
@@ -26,8 +24,6 @@ This project was completed within our web-week of teaching at Sparta Global. The
 - [London Theatre App](https://theatre-junkie.herokuapp.com/) | Javascript, React, Ruby | => Fullstack application for London theatre booking system
 
 - [Javascript Labs](https://github.com/BrynMorley/Coding-Bonanza/tree/master/Bruno%20Files) | Javascript, CSS, HTML | => Labs done over the web week
-
-## Alex
 
 ## Bryn
 - Bryn's Profiles => Website that uses the Steam, Riot and Blizzard APIs to fetch profile summaries for their games.
