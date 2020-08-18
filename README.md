@@ -34,8 +34,7 @@ This project was completed within our web-week of teaching at Sparta Global. The
 ## Chen
 - [NASA-API](https://sparta-chen.netlify.app/) Nasa API website hosted on Netlify
     - [Github](https://github.com/BrynMorley/Coding-Bonanza/tree/master/ChensWork/nasa-api-website) Link to project on Github
-- [JS-Fun](https://github.com/BrynMorley/Coding-Bonanza/tree/master/ChensWork/simple-css-js-website/index.html) Playing around with JS animations with NodeJS
-    - [Github] (https://github.com/BrynMorley/Coding-Bonanza/tree/master/ChensWork/simple-css-js-website)
+- [JS-Fun](https://github.com/BrynMorley/Coding-Bonanza/tree/master/ChensWork/simple-css-js-website) Playing around with JS animations with NodeJS
 - [POKE-API-REACT](https://github.com/BrynMorley/Coding-Bonanza/tree/master/ChensWork/pokemon-api-react-website) Retreiving data from Pokemon API with ReactJS
 
 ## Chris
