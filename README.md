@@ -1,7 +1,5 @@
 # Coding-Bonanza
 
-## Bruno's Projects
-
 ## Alex
 
 ## Alex's Website Portfolio
@@ -19,12 +17,25 @@ This project was completed within our web-week of teaching at Sparta Global. The
 - HTML and CSS were used in order to demonstrate an understanding of different styling and functionality aspects. For example, flexbox's were included with different hover and transform effects. CSS Grid's were also used which combined with box shadows, rounding and transitions etc.
 -  JavaScript was used to retrieve data from a football premier league API, with headers and keys included. 
 
+# Bruno's Projects
 
-## Bruno
+## Hook News
+- [Hook News Website](https://react-hook-news.netlify.app/) | Javascript, React | => Web application that mocks a search engine, specfically for relevant information regarding react.
+## Tell The Weather
+- [React weather App](https://telltheweather.netlify.app/) | Javascript, React | => Web application that mocks a weather app, for around the world
+## Theatre Junkie
+- [London Theatre App](https://theatre-junkie.herokuapp.com/) | Javascript, React, Ruby | => Fullstack application for London theatre booking system
+## Javascript Labs
+- [Javascript Labs](https://github.com/BrynMorley/Coding-Bonanza/tree/master/Bruno%20Files) | Javascript, CSS, HTML | => Labs done over the web week
+## Alex
 
 ## Bryn
 
 ## Chen
+- [NASA-API](https://sparta-chen.netlify.app/) Nasa API website hosted on Netlify
+    - [Github](https://github.com/BrynMorley/Coding-Bonanza/tree/master/ChensWork/nasa-api-website) Link to project on Github
+- [JS-Fun](https://github.com/BrynMorley/Coding-Bonanza/tree/master/ChensWork/simple-css-js-website) Playing around with JS animations with NodeJS
+- [POKE-API-REACT](https://github.com/BrynMorley/Coding-Bonanza/tree/master/ChensWork/pokemon-api-react-website) Retreiving data from Pokemon API with ReactJS
 
 ## Chris
 
