@@ -1,5 +1,22 @@
 # Coding-Bonanza
 
+## Alex
+
+## Alex's Website Portfolio
+
+### Project Goal 
+This website aims to portray previous projects that I have completed in order to illustrate my work as good as possible. You can also find a brief TMAY along with some of my skills. 
+### Technologies used
+- The website primarily incorporates HTML and CSS in order to display the contents and styling in the best light possible.
+- JavaScript was also used in order to improve the functionality of the navigation bar. The navigation bar transforms into an X once it is closed by an EventListener created in Js.
+
+## Alex's Web-Week Project
+This project was completed within our web-week of teaching at Sparta Global. The website demonstrates different functionality and styling that was learned throughout the course of the teaching. 
+
+## Technologies Used
+- HTML and CSS were used in order to demonstrate an understanding of different styling and functionality aspects. For example, flexbox's were included with different hover and transform effects. CSS Grid's were also used which combined with box shadows, rounding and transitions etc.
+-  JavaScript was used to retrieve data from a football premier league API, with headers and keys included. 
+
 # Bruno's Projects
 
 ## Hook News
