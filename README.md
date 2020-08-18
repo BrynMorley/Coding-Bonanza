@@ -19,13 +19,12 @@ This project was completed within our web-week of teaching at Sparta Global. The
 
 # Bruno's Projects
 
-## Hook News
 - [Hook News Website](https://react-hook-news.netlify.app/) | Javascript, React | => Web application that mocks a search engine, specfically for relevant information regarding react.
-## Tell The Weather
+
 - [React weather App](https://telltheweather.netlify.app/) | Javascript, React | => Web application that mocks a weather app, for around the world
-## Theatre Junkie
+
 - [London Theatre App](https://theatre-junkie.herokuapp.com/) | Javascript, React, Ruby | => Fullstack application for London theatre booking system
-## Javascript Labs
+
 - [Javascript Labs](https://github.com/BrynMorley/Coding-Bonanza/tree/master/Bruno%20Files) | Javascript, CSS, HTML | => Labs done over the web week
 
 ## Alex
