@@ -7,7 +7,7 @@ This website aims to portray previous projects that I have completed in order to
 ### Technologies used
 - The website primarily incorporates HTML and CSS in order to display the contents and styling in the best light possible.
 - JavaScript was also used in order to improve the functionality of the navigation bar. The navigation bar transforms into an X once it is closed by an EventListener created in Js.
-- [Website Portfolio](https://github.com/alexm710/web-portfolio)
+- [Website Portfolio](https://alexm710.github.io/web-portfolio/)
 
 ## Alex's Web-Week Project
 This project was completed within our web-week of teaching at Sparta Global. The website demonstrates different functionality and styling that was learned throughout the course of the teaching. 
