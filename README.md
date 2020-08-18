@@ -8,6 +8,10 @@
 ## Bryn
 
 ## Chen
+- [NASA-API](https://sparta-chen.netlify.app/)
+    -[Github](https://github.com/BrynMorley/Coding-Bonanza/tree/master/ChensWork/nasa-api-website)
+- [JS-Fun](https://github.com/BrynMorley/Coding-Bonanza/tree/master/ChensWork/simple-css-js-website)
+- [POKE-API-REACT](https://github.com/BrynMorley/Coding-Bonanza/tree/master/ChensWork/pokemon-api-react-website)
 
 ## Chris
 
