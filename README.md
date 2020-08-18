@@ -1,13 +1,27 @@
 # Coding-Bonanza
 
-## Bruno's Projects
+# Bruno's Projects
+
+## Hook News
+- [Hook News Website](https://react-hook-news.netlify.app/) | Javascript, React | => Web application that mocks a search engine, specfically for relevant information regarding react.
+## Tell The Weather
+- [React weather App](https://telltheweather.netlify.app/) | Javascript, React | => Web application that mocks a weather app, for around the world
+## Theatre Junkie
+- [London Theatre App](https://theatre-junkie.herokuapp.com/) | Javascript, React, Ruby | => Fullstack application for London theatre booking system
+## Javascript Labs
+- [Javascript Labs](https://github.com/BrynMorley/Coding-Bonanza/tree/master/Bruno%20Files) | Javascript, CSS, HTML | => Labs done over the web week
 
 ## Alex
 
 ## Bryn
 - Bryn's Profiles => Website that uses the Steam, Riot and Blizzard APIs to fetch profile summaries for their games.
 - [Modnar's Dungeon]("https://github.com/BrynMorley/WPF-EF_Project_-Modnar") => A simple WPF game that lets you fight monsters randomly chosen from a database with custom characters
+
 ## Chen
+- [NASA-API](https://sparta-chen.netlify.app/)
+    -[Github](https://github.com/BrynMorley/Coding-Bonanza/tree/master/ChensWork/nasa-api-website)
+- [JS-Fun](https://github.com/BrynMorley/Coding-Bonanza/tree/master/ChensWork/simple-css-js-website)
+- [POKE-API-REACT](https://github.com/BrynMorley/Coding-Bonanza/tree/master/ChensWork/pokemon-api-react-website)
 
 ## Chris
 
