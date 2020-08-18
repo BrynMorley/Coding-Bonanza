@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .container{
+            margin-bottom:25px;
+        }
+        .button{
+            border-style:none;
+            background-color: #646464;
+            color:white;
+            height: 23px;
+        }
+
+        input{
+            height: 17px;
+        }
+        .button:hover{
+            background-color: #979797;
+        }
+        .radio {
+            margin-bottom:15px;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Colour Mixer</h1>
+    <input id="rgb" class="radio" name="hexOrRgb" type="radio" checked="true">RGB</input>
+    <input id="hex" class="radio"  name="hexOrRgb" type="radio">Hex</input>
+
+    <div>Base Colour</div>
+    <div class="container">
+        
+        <input id="baseColourInput"/>       
+        <button class="button" id="baseCalc">Calculate</button>
+
+    </div>
+
+    <div>Overlay RGBA</div>
+    <div class="container">
+        <input id="overlayColourInput"/>
+        <button class="button" id="overlayCalc">Calculate</button>
+    </div>
+
+    <canvas class="canvas" id="rectangleCanvas"></canvas>
+
+    <script>
+        var rectCanvas = document.getElementById("rectangleCanvas");
+        var rectCtx = rectCanvas.getContext("2d");
+        var isRgb = document.getElementById("rgb");
+
+
+        var calcBase = document.getElementById("baseCalc");
+        const calcOverlay = document.getElementById("overlayCalc");
+
+        calcBase.addEventListener("click", calcBaseColour);
+        calcOverlay.addEventListener("click", calcOverlayBaseColour);
+        
+        function calcBaseColour() 
+        {
+            const colour = document.getElementById("baseColourInput");
+            const colourArray = colour.value.split(",");
+            
+            if (isRgb.checked == true) {
+                rectCtx.fillStyle = `rgba(${colourArray[0]},${colourArray[1]},${colourArray[2]})`
+                console.log("RGB");
+            } else {
+                console.log("hex");
+                rectCtx.fillStyle = `rgba(${parseInt(colourArray[0])},${parseInt(colourArray[1])},${parseInt(colourArray[2])},1)`;
+            }
+                                               
+            rectCtx.fillRect(0,0,167,25);
+        }
+
+        function calcOverlayBaseColour() 
+        {
+            const colour = document.getElementById("overlayColourInput");
+            const colourArray = colour.value.split(",");
+
+            if (isRgb.checked == true) {
+                rectCtx.fillStyle = `rgba(${colourArray[0]},${colourArray[1]},${colourArray[2]},${colourArray[3]})`
+                console.log("RGB");
+            } else {
+                console.log("hex");
+                rectCtx.fillStyle = `rgba(${parseInt(colourArray[0])},${parseInt(colourArray[1])},${parseInt(colourArray[2])},${parseInt(colourArray[3])})`;
+            }
+            rectCtx.fillRect(0,0,167,25);
+        }
+
+        function displayColourValue() {
+
+        }
+
+        function componentToHex(c) {
+            let hex = c.toString(16);
+            return hex.length == 1 ? "0" + hex : hex;
+        }
+
+        function rgbToHex(r, g, b) {
+            return "#" + componentToHex(r) + componentToHex(g) + componentToHex(b);
+        }
+    </script>
+</body>
+</html>
