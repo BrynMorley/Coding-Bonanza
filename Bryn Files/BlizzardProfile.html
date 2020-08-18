@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <title>Profiles</title>
+    
+         <!-- Bootstrap CSS -->
+         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    
+         <style>
+          Header{
+              background-color: dimgrey;
+          }
+          nav.navbar{
+              background-color: dimgrey;
+          }
+          body{
+              background-color: dimgray;
+              color:white;
+          }
+          .row{
+            background-color:rgb(56, 54, 54);
+            color:white;
+            font-size: 2em;
+            margin: 5px;
+            border-radius: 25px;
+          }
+          .ProfilePic{
+            width: 10em;
+          }
+          tr{
+            color:white;
+          }
+          
+          </style> 
+    </head>
+<body>
+    <div class="Header">
+        <div class="Header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Bryn's Profiles</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="/Bryndex.html">Home </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href='http://127.0.0.1:5500/SteamProfile.html'>Steam</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href='http://127.0.0.1:5500/RiotProfile.html'>Riot</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="http://127.0.0.1:5500/BlizzardProfile.html">Blizzard <span class="sr-only">(current)</span></a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>  
+
+        <div class="container">
+          <H1>World of Warcraft</H1>
+          <input type="text" class="form-control" id="getProfileInput" placeholder="Unneeded currently">
+          <button class="btn btn-primary" id="getWOWCharacters" type="button" onclick="getData()">Submit</button>
+          </div>
+          <div class= "container">
+            <div id="data">No data yet</div>
+            
+            <table  class="table table-striped table-dark">
+              <thead>
+                <th>Name</th>
+                <th>Class</th>
+                <th>Level</th>
+                <th>Faction</th>
+                <th>Race</th>
+                <th>Realm</th>
+              </thead>
+              <tbody id="wowCharactersTable"> 
+              
+              </tbody>
+
+            </table>
+          </div>
+
+    <script>
+           // function getData(){
+           //       var key = "RGAPI-58f83cc1-5e51-4ad3-b534-344a940cc5da"
+            //          fetch('https://us.api.blizzard.com/profile/user/wow?namespace=profile-us&locale=en_US&access_token=5169707d13a74719a5ce7ef44378db90')
+         //              .then(response => response.json())
+         //              .then(json => {
+         //              console.log(json);
+         //              document.getElementById('data').innerHTML=JSON.stringify(json);
+                 
+         //    }) 
+       //     }
+    
+      
+             function getData(){
+                      
+                      var req = new XMLHttpRequest();
+                      req.open("GET",'https://eu.api.blizzard.com/profile/user/wow?namespace=profile-eu&locale=en_UK&access_token=US19zbmkAUh05L0PSc2wQyxwYBP7C347s3',true);
+                      req.addEventListener('load', function(){
+                        if(req.status>= 200 && req.status<400)
+                        {
+                          var response = JSON.parse(req.responseText);
+                          console.log(response);
+                          document.getElementById('data').innerHTML= "Data Returned";
+                          var characterTable = document.getElementById("wowCharactersTable");
+
+                          for(var i= 0; i < response.wow_accounts[0].characters.length;i++)  
+                          {    
+                          var row = characterTable.insertRow(i);
+                          var Name = row.insertCell(0);
+                          var Class = row.insertCell(1);
+                          var Level = row.insertCell(2);
+                          var Faction = row.insertCell(3);
+                          var Race = row.insertCell(4);
+                          var Realm = row.insertCell(5);
+
+                           Name.innerHTML = response.wow_accounts[0].characters[i].name;
+                           Level.innerHTML = response.wow_accounts[0].characters[i].level;
+                           Class.innerHTML = response.wow_accounts[0].characters[i].playable_class.id;
+                           Faction.innerHTML = response.wow_accounts[0].characters[i].faction.type;
+                           Race.innerHTML = response.wow_accounts[0].characters[i].playable_race.id;
+                           Realm.innerHTML = response.wow_accounts[0].characters[i].realm.slug;
+                          }
+                          response.wow_accounts[0].forEach(character => {
+                          });
+                        }
+                        else{
+                          console.log("Error in network request: " /*+ request.statusText*/);
+                        }
+                      });
+                      req.send(null);
+                      event.preventDefault();
+                  }
+                  
+                 
+    //Gets List of my (Bryn's) wow characters
+    //https://eu.api.blizzard.com/profile/user/wow?namespace=profile-eu&locale=en_UK&access_token=USG6CaM1KKKobYgpkkLv0pkdXDzvoVq4Ve
+
+    </script>
+</body>
+</html> 
